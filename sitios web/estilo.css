@@ -1,0 +1,53 @@
+body{
+    background-color: blue;
+}
+.section{
+    margin-block: center;
+    padding:20px 20px;
+
+}
+.article{
+background-color: cyan;
+border-radius: 15px;
+}
+
+h2{
+    font-family: Cantarell, Bold;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+.uno{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    align-content: center;
+}
+.dos{
+    background-color:crimson;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.tres{
+
+    background-color:firebrick;
+    border-radius: 10px;
+    display: inline-block;
+    align-content:space-around;
+}
+footer{
+    background-color: black;
+    padding: 10px 10px;
+}
+a{
+    font-family: Mathjax_Fraktur, Bold;
+}
+footer a{
+    transition: all 2s ease;
+    color: white;
+    font-size: 36px;
+}
+footer a:hover{
+    color: cadetblue;
+}

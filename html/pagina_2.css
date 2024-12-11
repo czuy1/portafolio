@@ -1,0 +1,18 @@
+/*pagina 2*/
+body{
+    background-color: rgb(130, 130, 192);
+}
+main section img{
+    width: 500px;
+    height: 300px;
+}
+header h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+    letter-spacing: 10px;
+}
+footer{
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+/*pagina 3*/
+body{
+    background-color: rgb(196, 188, 112);
+}
+
+header h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+    letter-spacing: 10px;
+}
+footer{
+    text-align: center;
+}

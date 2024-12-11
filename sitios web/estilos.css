@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+}
+body{
+    background-color: blue;
+}
+.header{
+    
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+h1{
+    font-family: FreeMono;
+}
+h3, h2, h4{
+    font-family:Freeserif;
+}
+.h2{
+    font-family: Mathjax_Fraktur, Bold;
+    font-size: 25px;
+}
+
+nav .btn{
+    font-family: Free Mono;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 26px;
+    justify-content:flex-end
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main{
+    margin:10px 10px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    background-color: cornflowerblue;
+    font-size: 44px;
+    display: flex;
+    align-content: space-around;
+    gap: 10px;
+
+}
+.karate1{
+    min-width: 340x;
+}
+.article{
+    margin: 10px;
+    align-items: start;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.aside{
+    background-color:cyan;
+    font-size: 36px;
+    display: flex;
+    gap: 10px;
+}
+.aside img{
+    margin: 10px;
+}
+.karate2{
+    min-width: 400px;
+}
+footer{
+    background-color: black;
+    padding: 10px 10px;
+    display: flex;
+}
+footer a{
+    transition: all 2s ease;
+    color: white;
+    font-size: px;
+}
+a{
+    font-family: Mathjax_Fraktur, Bold;
+}
+footer a:hover{
+    color: cadetblue;
+}

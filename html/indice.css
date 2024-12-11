@@ -1,0 +1,90 @@
+body{
+    display: flex; /*mostrar en columnas*/
+    justify-content: center; /*alinear contenido*/
+    align-items: center; /*alinear elementos*/
+    min-height: 100vh; /*altura minima del elemento*/
+    background: #434750;
+
+}
+
+ul{
+    position: relative;/*posicion de un elemento*/
+    /* transform: skew(-180deg); transformar elemento skew=oblicuo */
+    
+}
+
+ul li{
+    position: relative;
+    list-style: none; /*estilo de lista*/
+    width: 200px; /*ancho*/
+    background: #3e3f46; /*fondo*/ /*frente cubo*/
+    padding: 15px; /*relleno*/
+    z-index: var(--i); /*contenido super puesto(que elemento aparece encima del otro)*/
+    transition: 0.5s;
+
+}
+
+ul li:hover{
+    background: #33a3ee; /*frente al tocar*/
+    transform: translatex(50px); /*movimiento a la derecha al tocar*/
+}
+
+ul li::before{ /*antes*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #3e3f46; /*lado izquierdo del cubo*/
+    transform-origin: right;
+    transform: skewY(45deg); /*lado izquierdo dobla hacia atras*/
+    transition: 0.5s;
+}
+
+ul li:hover:before{ /*flotar antes*/
+    background: #1f5378; /*lado izquierdo al tocar*/
+}
+
+ul li::after{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #35383e; /*techo del cubo*/
+    transform-origin: bottom;
+    transform: skewx(45deg); /*posicion x*/
+    transition: 0.5s;
+}
+
+ul li:hover::after{
+    background: #3982b2; /*techo de cada bloque al tocar*/
+}
+
+ul li a{
+    text-decoration: none; /*descoracion de texto*/
+    color: #999; /*letras del cubo*/
+    display: block;
+    text-transform: uppercase; /*uppercase = mayuscula*/
+    letter-spacing: 0.05em;/*espacio entre letras*/
+    transition: 0.5s; /*tiempo de animacion en el que genera un cambio*/
+    
+}
+
+ul li:hover{ /*hover = flotar*/
+    color:#fff;    
+
+}
+
+ul li:last-child::after{
+    box-shadow: -120px 120px 20px rgba(0,0,0,0.25); /*sombra del cubo abajo*/
+}
+
+/*ul li:last-child::before{
+    box-shadow: -120px 120px 20px rgba(0,0,0,0.25); sombra del lado izquierdo
+}
+*/
+
+
